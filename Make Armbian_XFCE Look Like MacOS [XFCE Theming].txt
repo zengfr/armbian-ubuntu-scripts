@@ -1,0 +1,38 @@
+https://i12bretro.github.io/tutorials/0529.html
+Make Armbian/XFCE Look Like MacOS [XFCE Theming]
+Download the Os Catalina theme Download
+Download the Os Catalina icons Download
+Extract and install the downloaded archives with the following command:
+# install prerequisites
+sudo apt install plank gtk2-engines-murrine gtk2-engines-pixbuf -y
+# download desktop background
+sudo wget -O /usr/share/backgrounds/xfce/macOS-Catalina-Light-mode.jpg https://cdn.osxdaily.com/wp-content/uploads/2019/06/macOS-Catalina-Light-mode.jpg
+# make sure .icons and .themes exist
+mkdir ~/.themes && mkdir ~/.icons
+# extract the downloaded icons
+sudo tar -xf ~/Downloads/Os-Catalina-Icons*tar.xz -C ~/.icons
+# extract the downloaded theme
+sudo tar -xf ~/Downloads/Os-Catalina-XFCE*tar.xz -C ~/.themes
+# move the plank theme
+mkdir ~/.local/share/plank/themes/Os-Catalina -p
+cp ~/.themes/Os-Catalina-XFCE-4.16/plank/dock.theme ~/.local/share/plank/themes/Os-Catalina/dock.theme
+Click the XFCE button > Settings > Desktop
+On the Background tab, select the macOS Catalina background
+Click the XFCE button > Settings > Window Manager
+On the Style tab, select Os Catalina XFCE
+Click the XFCE button > Settings > Appearance
+On the Style tab, select Os Catalina XFCE
+On the Icons tab, select Os Catalina
+Click the XFCE button > Settings > Panel
+On the Display tab, slide the Row size to taste
+Select the Items tab
+Select the Whisker menu > Click the Edit icon
+Click the Panel Button tab > Click the Icon to edit it
+Select All Icons from the drop down
+Search logo > Select the apple icon > Click OK
+Press ALT+F2 > Type plank
+Hold CTRL and right click on the Plank dock > Preferences
+Select the Os-Catalina theme
+Click the XFCE button > Settings > Session and Startup
+On the Application Autostart tab, Click the +Add button
+Enter the name Plank and command plank > Click OK
