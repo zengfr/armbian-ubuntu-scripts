@@ -29,6 +29,10 @@ sudo ./install.sh
 - https://www.bilibili.com/video/BV1XT411p7Ku/
 - https://www.bilibili.com/video/BV1FV4y197T9/
 
+### Screenshot
+![armbian_ubuntu_desktop_xfce4.png](https://gitee.com/zengfr/armbian-ubuntu-scripts/raw/main/img/armbian_ubuntu_desktop_xfce4.png)
+![armbian_ubuntu_desktop_xfce4.png](https://raw.githubusercontent.com/zengfr/armbian-ubuntu-scripts/main/img/armbian_ubuntu_desktop_xfce4.png)
+
 ### Other Support
 Support for Armbian in Amlogic, Rockchip and Allwinner boxes. Support a311d, s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905, s905l, rk3588, rk3568, rk3399, rk3328, h6, etc.
 

@@ -13,7 +13,7 @@ sudo apt install net-tools zip unzip wget less nano
 sudo apt install armbian-firmware
 
 sudo apt install --no-install-recommends xorg xinit dbus-x11
-sudo apt install dwm xserver-xorg x11-xserver-utils 
+sudo apt install xserver-xorg x11-xserver-utils dwm
 #xrandr
 
 sudo apt install xrdp xserver-xorg-core xserver-xorg-input-all
@@ -28,7 +28,7 @@ sudo systemctl enable xrdp
 #sudo systemctl disable firewalld.servie
 
 
-sudo apt install gedit gparted bleachbit network-manager
+sudo apt install onboard bleachbit network-manager blueman gedit gparted 
 sudo apt install plank conky nautilus nautilus-admin 
 #sudo apt install xcompmgr #@xcompmgr -n
 sudo apt install firefox-esr chromium-browser 
@@ -41,7 +41,7 @@ sudo apt install ibus ibus-libpinyin language-pack-zh-hans
 
 
 sudo apt install --no-install-recommends lightdm lightdm-gtk-greeter
-sudo apt install --no-install-recommends xfce4 xfce4-goodies 
+sudo apt install --no-install-recommends xfce4-goodies xfce4 
 # icons fix
 #sudo apt install xubuntu-icon-theme gnome-colors-common adwaita-icon-theme-full
 #sudo apt install ubuntu-wallpapers-jammy xubuntu-icon-theme xfwm4-themes gnome-backgrounds
@@ -75,3 +75,7 @@ sudo dmesg | grep Bluetooth
 #sudo nano /etc/default/locale
 #LANG="zh_CN.UTF-8"
 #LC_ALL="zh_CN.UTF-8"
+
+#修改 /etc/default/armbian-zram-config，改为：ENABLED=false
+#修改 /etc/default/armbian-ramlog，改为：ENABLED=false
+#打开 /usr/lib/armbian/armbian-ramlog 脚本 syncToDisk 方法 添加 return 0
